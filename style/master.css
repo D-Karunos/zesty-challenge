@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timetable {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: antiquewhite;
+}
+.timetable__header {
+  width: 100%;
+}
+.timetable__header h2,
+.timetable__header h3 {
+  color: black;
+  text-align: center;
+}
+.timetable__header h2 {
+  font-size: 20px;
+}
+.timetable__header h3 {
+  font-size: 16px;
+}
+.timetable__content p {
+  font-size: 15px;
+  color: black;
+  text-transform: uppercase;
+}
+.timetable__content p.open {
+  color: green;
+  font-weight: 700;
+}
+.timetable__content p.closed {
+  font-weight: 700;
+  opacity: 0.5;
+}/*# sourceMappingURL=master.css.map */

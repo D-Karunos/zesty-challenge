@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.timetable {
+  width: fit-content;
+  border-radius: 30px;
+  border: 1px solid black;
+
+  padding: 20px;
+  background-color: antiquewhite;
+
+  &__header {
+    width: 100%;
+    h2,
+    h3 {
+      color: black;
+      text-align: center;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  &__content {
+    p {
+      font-size: 15px;
+      color: black;
+      text-transform: uppercase;
+
+      &.open {
+        color: green;
+        font-weight: 700;
+      }
+
+      &.closed {
+        font-weight: 700;
+        opacity: 0.5;
+      }
+    }
+  }
+}
